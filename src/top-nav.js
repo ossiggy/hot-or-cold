@@ -8,7 +8,7 @@ export default function TopNav(props){
           <a href="#what" className="what">WHAT?</a>
         </li>
         <li>
-          <a href="#" className="new">+NEW GAME</a>
+          <a href="#" onClick={()=>props.restart()} className="new">+NEW GAME</a>
         </li>
       </ul>
     </nav>

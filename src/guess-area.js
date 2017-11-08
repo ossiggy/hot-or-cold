@@ -1,7 +1,6 @@
 import React from 'react'
 
 import GuessForm from './guess-form'
-import GuessList from './guess-list'
 import Temperature from './temperature'
 
 export default function GuessArea(props){

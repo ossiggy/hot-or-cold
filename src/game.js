@@ -12,7 +12,7 @@ constructor(props){
   this.state={
     guesses: [],
     secretNumber: Math.floor(Math.random()*100)+1,
-    temp: 'Make your Guess'
+    temp: 'Make Your Guess'
   }
 }
 
@@ -20,7 +20,7 @@ constructor(props){
     this.setState({
       guesses: [],
       secretNumber: Math.floor(Math.random()*100)+1,
-      temp: 'Make your Guess'
+      temp: 'Make Your Guess'
     })
   }
 
@@ -41,6 +41,10 @@ constructor(props){
     }
     if(difference===0){
       temp ='Winner!'
+    }
+    if(isNaN(guess)){
+      alert('must be a number!')
+      return
     }
 
     this.setState({

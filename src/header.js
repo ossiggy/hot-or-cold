@@ -1,22 +1,12 @@
 import React from 'react'
 
-import Game from './game'
-import GuessArea from './guess-area'
+import TopNav from './top-nav'
 
-export default function Header(){
+export default function Header(props){
     return (
       <header className="header">
         <h1>HOT or COLD</h1>
-          <nav>
-            <ul className="nav-list"> 
-              <li>
-                <a href="#" className="what">WHAT?</a>
-              </li>
-              <li>
-                <a href="#" className="new">+NEW GAME</a>
-              </li>
-            </ul>
-          </nav>
+          <TopNav restart={()=>props.restart()} />
       </header>
     )
 }
