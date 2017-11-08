@@ -1,9 +1,11 @@
 import React from 'react'
 
+import './information-section.css'
+
 export default function Information(props){
   return (
     <div id='what'>
-      <h1>What do I do?</h1>
+      <h1 className='what'>What do I do?</h1>
        <p>This is a Hot or Cold Number Guessing Game. The game goes like this:</p>
           <ul>
             <li>1. I pick a random secret number between 1 to 100 and keep it hidden.</li>

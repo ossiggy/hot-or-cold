@@ -28,8 +28,8 @@ export default class GuessForm extends React.Component {
           min='1'
           max='100'
           ref={input => this.guessValue=input} 
-          placeholder="Enter your Guess" />
-        <button type="submit">Guess</button>
+          placeholder="Enter Your Guess" />
+        <button className="button" type="submit">Guess</button>
       </form>
     )
   }

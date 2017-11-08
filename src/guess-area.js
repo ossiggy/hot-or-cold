@@ -1,5 +1,7 @@
 import React from 'react'
 
+import './guess-area.css'
+
 import GuessForm from './guess-form'
 import Temperature from './temperature'
 

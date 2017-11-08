@@ -40,11 +40,18 @@ constructor(props){
       temp = 'Cold'
     }
     if(difference===0){
-      temp ='Winner!'
+      temp ='Winner! Press "NEW GAME" to play again!'
     }
     if(isNaN(guess)){
       alert('must be a number!')
       return
+    }
+
+    for(let i=0; i<this.state.guesses.length; i++){
+      if(guess===this.state.guesses[i]){
+        alert('You already guessed this number!')
+        return
+      }
     }
 
     this.setState({
